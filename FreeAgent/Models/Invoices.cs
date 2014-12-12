@@ -101,7 +101,7 @@ namespace FreeAgent
 		public static string Discount = "Discount";
 		public static string Credit = "Credit";
 		public static string VAT = "VAT";
-		public static string NoUnit = "No Unit";
+		public static string NoUnit = "-no unit-";
 	}
 
 	public class InvoiceViewFilter
@@ -171,6 +171,8 @@ namespace FreeAgent
 		public string subject { get; set; }
 
 		public string body { get; set; }
+
+        public bool email_to_sender { get; set; }
 	}
 }
 
